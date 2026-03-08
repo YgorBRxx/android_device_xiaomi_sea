@@ -1,0 +1,35 @@
+# Camera
+persist.vendor.camera. u:object_r:vendor_camera_persist_prop:s0
+persist.vendor.XDRVersion  u:object_r:vendor_camera_persist_prop:s0
+vendor.camera. u:object_r:vendor_camera_prop:s0
+vendor.debug. u:object_r:vendor_camera_prop:s0
+
+# Dynamic sensor
+vendor.dynamic_sensor. u:object_r:vendor_dynamic_sensor_prop:s0
+
+# Fingerprint
+persist.vendor.fpc. u:object_r:vendor_fp_prop:s0
+persist.vendor.goodix. u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp. u:object_r:vendor_fp_prop:s0
+ro.hardware.fp. u:object_r:vendor_fp_prop:s0
+vendor.sys.fp. u:object_r:vendor_fp_prop:s0
+
+# NFC
+vendor.tms. u:object_r:vendor_nfc_prop:s0
+
+# RIL
+ro.vendor.oem. u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.vt. u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.oem.sno u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.oem.psno u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.oem.imei u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.oem.meid u:object_r:vendor_mtk_radio_prop:s0
+persist.vendor.sarstatus u:object_r:vendor_mtk_radio_prop:s0
+
+# Sensors
+ro.vendor.sensors.xiaomi. u:object_r:vendor_sensors_prop:s0
+persist.vendor.sensors.used.framebuffer u:object_r:vendor_hal_citsensorservice_xiaomi_prop:s0
+vendor.xiaomi.sensors. u:object_r:vendor_hal_citsensorservice_xiaomi_prop:s0
+
+# Thermal
+vendor.sys.thermal.     u:object_r:vendor_thermal_engine_prop:s0

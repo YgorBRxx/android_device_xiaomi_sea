@@ -1,0 +1,13 @@
+# Unpinned blobs from sea_global-user 14 UP1A.230905.011 V816.0.16.0.UHZMIXM release-keys
+# Redmi Note 12S (V816.0.16.0.UHZMIXM)
+
+audio_dsp.img;AB
+gz.img;AB
+lk.img;AB
+md1img.img;AB
+pi_img.img;AB
+preloader_raw.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
