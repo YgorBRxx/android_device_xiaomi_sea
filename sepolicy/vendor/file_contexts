@@ -77,9 +77,6 @@
 # Mi Thermald
 /vendor/bin/mi_thermald u:object_r:mi_thermald_exec:s0
 
-# MiCharge
-/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.micharge-service u:object_r:hal_micharge_default_exec:s0
-
 # TouchFeature
 /(odm|vendor/odm|vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hw\.touchfeature-service   u:object_r:hal_touchfeature_xiaomi_default_exec:s0
 /dev/xiaomi-touch                                                                        u:object_r:vendor_touchfeature_device:s0
