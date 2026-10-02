@@ -46,7 +46,6 @@ debug.sf.late.sf.duration=27600000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.use_phase_offsets_as_durations=1
-debug.stagefright.c2inputsurface=-1
 hbt.debug=off
 media.stagefright.thumbnail.prefer_hw_codecs=true
 mediatek.wlan.ctia=0
