@@ -317,9 +317,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek \
     thermal_symlinks_mediatek
 
-PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.mediatek
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.st \

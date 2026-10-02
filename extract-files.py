@@ -119,6 +119,9 @@ blob_fixups: blob_fixups_user_type = {
 
     ('vendor/bin/hw/android.hardware.contexthub-service.tinysys'): blob_fixup()
         .replace_needed('android.hardware.contexthub-V3-ndk.so', 'android.hardware.contexthub-V4-ndk.so'),
+        
+    ('vendor/bin/hw/android.hardware.memtrack-service.mediatek'): blob_fixup()
+        .replace_needed('android.hardware.memtrack-V1-ndk.so', 'android.hardware.memtrack-V1-ndk_prebuilt.so'),
 
     ('vendor/bin/hw/mtkfusionrild'): blob_fixup()
         .add_needed('libutils-v33.so'),
