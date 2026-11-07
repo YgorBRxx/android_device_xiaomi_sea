@@ -113,7 +113,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek \
     hardware/xiaomi \
-    hardware/google/pixel \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/pixel/pixelstats \
     hardware/google/interfaces \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek/libaedv \
@@ -122,10 +123,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
-
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
 
 # Control groups/Task profiles
 PRODUCT_COPY_FILES += \
@@ -232,6 +229,9 @@ PRODUCT_PACKAGES += \
 
 
 # Extra files
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 TARGET_USES_VULKAN := true
 TARGET_EXCLUDES_AUDIOFX := true
 

@@ -50,8 +50,15 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
 
     ('vendor/bin/mnld'): blob_fixup()
+        .replace_needed('libmnl.so', 'libmnl-v33.so')
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
+    
+    (
+        'vendor/lib/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_vdec.so',
+        'vendor/lib/libcodec2_mtk_venc.so', 'vendor/lib64/libcodec2_mtk_venc.so'
+    ): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter-v33.so'),
 
     (
         'vendor/lib/egl/libGLES_mali.so',
@@ -80,7 +87,15 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so',
         'vendor/lib/hw/vendor.mediatek.hardware.pq_aidl-impl.so',
         'vendor/lib64/hw/audio.primary.mt6781.so',
-        'vendor/lib/hw/audio.primary.mt6781.so'
+        'vendor/lib/hw/audio.primary.mt6781.so',
+        'vendor/lib/hw/displayfeature.default.so', 'vendor/lib64/hw/displayfeature.default.so',
+        'vendor/lib/libpqxmlparser.so', 'vendor/lib64/libpqxmlparser.so',
+        'vendor/lib/librt_extamp_intf.so', 'vendor/lib64/librt_extamp_intf.so',
+        'vendor/lib64/libsilkybrightnesscore.so',
+        'vendor/lib/libpowerhal.so',
+        'vendor/lib64/libpowerhal.so',
+        'vendor/lib/lib_power_applist.so',
+        'vendor/lib64/lib_power_applist.so'
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 
